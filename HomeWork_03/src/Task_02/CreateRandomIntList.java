@@ -5,13 +5,14 @@ import java.util.List;
 import java.util.Random;
 
 public class CreateRandomIntList {
-public static List<Integer> RandomNumList(){
-            Random rnd=new Random();
-            List<Integer> iList= new ArrayList<>();
+    public static List<Integer> RandomNumList() {
 
-            for (int i = 0; i < 30; i++){
-            iList.add(rnd.nextInt());
+        Random rnd = new Random();
+        List<Integer> iList = new ArrayList<>();
+
+        for (int i = 0; i < 30; i++) {
+            iList.add(rnd.nextInt(30));
         }
-    return iList;
-}
+        return iList;
+    }
 }
