@@ -31,6 +31,6 @@ public class HomeWork6 {
         System.out.printf("Футболист " + player3.name+  " есть в коллекции ----> %b", footbPlSet.contains(player3));
         System.out.println("\n====================================");
 
-        System.out.println(footbPlSet.toString().replaceAll("^\\[|\\]|\\,$", ""));
+        System.out.println(footbPlSet.toString().replaceAll("^\\[|\\]$", "").replace(',',' '));
     }
 }
